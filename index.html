@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câmera com Filtros ao Vivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Câmera ao Vivo com Filtros</h1>
+
+  <div class="camera-container">
+    <video id="video" autoplay playsinline></video>
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <div class="controls">
+    <button class="btn active" data-filter="normal">Normal</button>
+    <button class="btn" data-filter="bw">Preto e Branco</button>
+    <button class="btn" data-filter="sepia">Sépia</button>
+    <button class="btn" data-filter="invert">Inverter Cores</button>
+    <button class="btn" data-filter="blur">Desfocar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
